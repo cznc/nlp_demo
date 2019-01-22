@@ -10,12 +10,15 @@ git push -u origin master
 
 遇到错误: error: src refspec master does not match any.
 错误原因: 本地仓库为空
-解决方法: 使用如下命令 添加文件;
+解决方法: 使用如下命令 添加文件:
 git add -A
 还要夸一下github，否则不成功:
 git commit -m "github你真棒"
 然后上传:
-git pull --rebase origin master
+git push -u origin master
+
+遇到错误:
+fatal: Couldn't find remote ref master
 
 最后验证:
 git push -u origin master
